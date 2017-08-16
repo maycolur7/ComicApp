@@ -8,12 +8,16 @@ body{
   margin-top: 30px;
 }
 
+.img-logo-marvel {
+  width: 180px;
+  max-width: 180px;
+}
 
-
-
-
+.img-logo-dc {
+  width: 280px;
+  max-width: 280px;
+}
 /* Animations */
-
 .animated {
   -webkit-animation-duration: 1s;
   animation-duration: 1s;
