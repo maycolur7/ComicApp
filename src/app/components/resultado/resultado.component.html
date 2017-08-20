@@ -1,7 +1,15 @@
-<h1>Resultado de las busqueda...  </h1>
+<h1>Resultado de la busqueda de: {{ termino }} </h1>
 <hr />
 
-<div class="card-columns">
+<div class="row" *ngIf="heroeBuscado.length==0">
+  <div class="col-md-12">
+    <div class="alert alert-info" role="alert">
+      <p><strong>No existen resultados con el termino: {{termino}}</strong></p>
+    </div>
+  </div>
+</div>
+
+<div class="card-columns" *ngIf="heroeBuscado.length!=0">
   <div class="card animated fadeIn fast" >
     <img class="card-img-top" [src]="heroeBuscado[0].img" [alt]="heroeBuscado[0].nombre">
     <div class="card-body">
@@ -11,3 +19,5 @@
     </div>
   </div>
 </div>
+
+
