@@ -6,7 +6,7 @@
     <a class="btn btn-outline-danger btn-block" (click)="goBack()">Regresar</a>
   </div>
   <div class="col-md-8 animated fadeIn fast">
-    <h3>{{ heroe.nombre }} <small>({{ heroe.aparicion }})</small></h3>
+    <h3>{{ heroe.nombre | uppercase }} <small>({{ heroe.aparicion | uppercase | date:'y'}})</small></h3>
     <hr />
     <p>{{ heroe.bio }}</p>
     <div>

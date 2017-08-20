@@ -1,0 +1,13 @@
+<h1>Resultado de las busqueda...  </h1>
+<hr />
+
+<div class="card-columns">
+  <div class="card animated fadeIn fast" >
+    <img class="card-img-top" [src]="heroeBuscado[0].img" [alt]="heroeBuscado[0].nombre">
+    <div class="card-body">
+      <h4 class="card-title">{{ heroeBuscado[0].nombre }}</h4>
+      <p class="card-text">{{ heroeBuscado[0].bio }}</p>
+      <p class="card-text"><small class="text-muted">{{ heroeBuscado[0].aparicion }}</small></p>
+    </div>
+  </div>
+</div>
