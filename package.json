@@ -26,7 +26,9 @@
     "jquery": "^3.2.1",
     "popper": "^1.0.0",
     "rxjs": "^5.4.1",
+    "tether": "^1.4.0",
     "tty-browserify": "0.0.0",
+    "webpack": "^3.5.5",
     "zone.js": "^0.8.14"
   },
   "devDependencies": {
